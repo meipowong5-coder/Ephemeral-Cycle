@@ -1,5 +1,14 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
-html { background: white; scroll-behavior: smooth; }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: white;
+    scroll-behavior: smooth;
+}
+
 body {
     background: rgb(92, 165, 165);
     color: khaki;
@@ -30,7 +39,7 @@ nav ul {
     border-radius: 50px;
     text-decoration: none;
     transition: all 0.3s;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 .view-more-btn:hover {
@@ -44,12 +53,36 @@ nav ul {
     background: rgb(92, 165, 165);
 }
 
-#home > h1 {
+#home>h1 {
     text-align: center;
     font-size: 3em;
     color: antiquewhite;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.project-credits {
+    text-align: center;
+    margin-top: -20px;
+    /* Pulls it closer to the H1 title */
+    margin-bottom: 40px;
+    /* Adds space before the Artist Statement */
+}
+
+.artist-name {
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    color: antiquewhite;
+    /* Or your preferred highlight color */
+}
+
+.advisor-name {
+    font-size: 1rem;
+    font-style: italic;
+    color: antiquewhite;
+    /* A slightly softer grey to show hierarchy */
+    margin-top: 0;
 }
 
 .artist-statement {
@@ -67,7 +100,7 @@ nav ul {
     position: relative;
     overflow: hidden;
     border-radius: 20px;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
 }
 
 .carousel-inner {
@@ -77,8 +110,10 @@ nav ul {
 
 .carousel-item {
     min-width: 100%;
-    height: 400px; /* Placeholder height */
-    background: #ccc; /* Placeholder background */
+    height: 400px;
+    /* Placeholder height */
+    background: #ccc;
+    /* Placeholder background */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -98,7 +133,7 @@ nav ul {
     background: rgb(92, 165, 165);
 }
 
-#process > h2 {
+#process>h2 {
     text-align: center;
     font-size: 2.em;
     color: antiquewhite;
@@ -118,13 +153,13 @@ nav ul {
     border: dotted antiquewhite 6px;
     border-radius: 2.5em;
     padding: 20px 25px;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
     transition: all 0.6s ease;
 }
 
 .process-entry:hover {
     transform: translateY(-12px);
-    box-shadow: 0 40px 90px rgba(0,0,0,0.45);
+    box-shadow: 0 40px 90px rgba(0, 0, 0, 0.45);
 }
 
 .process-title {
@@ -157,7 +192,9 @@ nav ul {
 }
 
 @media (min-width: 900px) {
-    .process-text { text-align: left; }
+    .process-text {
+        text-align: left;
+    }
 }
 
 .process-points {
@@ -175,15 +212,77 @@ nav ul {
     font-size: 1.em;
 }
 
+.external-links {
+    width: 100%;
+    margin-top: 30px;
+    border-top: 1px dashed antiquewhite;
+    padding-top: 20px;
+}
+
+.external-links h3 {
+    color: antiquewhite;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.link-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.link-card {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid khaki;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    width: 280px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.link-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.link-card img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.link-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.link-info span {
+    color: antiquewhite;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.link-info small {
+    color: khaki;
+    font-size: 0.75rem;
+}
+
 /* Main layout for research */
 #research {
     padding: 40px 5vw 50px;
     background: rgb(92, 165, 165);
 }
 
-#research > h2 {
+#research>h2 {
     text-align: center;
-    font-size: 2.em;
+    font-size: 2em; /* Fixed the .em typo */
     color: antiquewhite;
     margin-bottom: 10px;
 }
@@ -201,13 +300,13 @@ nav ul {
     border: dotted antiquewhite 6px;
     border-radius: 2.5em;
     padding: 20px 25px;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
     transition: all 0.6s ease;
 }
 
 .research-entry:hover {
     transform: translateY(-12px);
-    box-shadow: 0 40px 90px rgba(0,0,0,0.45);
+    box-shadow: 0 40px 90px rgba(0, 0, 0, 0.45);
 }
 
 .research-title {
@@ -217,34 +316,39 @@ nav ul {
     margin-bottom: 25px;
 }
 
+/* This container now keeps everything stacked vertically */
 .research-body {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Stays vertical */
     gap: 20px;
-    align-items: center;
+    align-items: center; /* Centers the text block and gallery */
 }
 
+/* REMOVED the flex-direction: row from this media query */
 @media (min-width: 900px) {
     .research-body {
-        flex-direction: row;
-        align-items: flex-start;
+        /* flex-direction: row; <--- This was the culprit! */
+        align-items: center; 
         justify-content: center;
         gap: 25px;
     }
 }
 
 .research-text {
-    flex: 1;
-    min-width: 0;
+    width: 100%; /* Ensures text takes up full width before gallery starts */
     text-align: center;
 }
 
+/* Keep text left-aligned on desktop if you prefer, 
+   but it will still be on top of the images */
 @media (min-width: 900px) {
-    .research-text { text-align: left; }
+    .research-text {
+        text-align: left; 
+    }
 }
 
 .research-points {
-    font-size: 1.em;
+    font-size: 1em;
     line-height: 2.1;
     color: khaki;
 }
@@ -255,7 +359,17 @@ nav ul {
 
 .research-points strong {
     color: antiquewhite;
-    font-size: 1.em;
+    font-size: 1em;
+}
+
+/* Optional: styling for the gallery images to ensure they look good stacked */
+.research-gallery img {
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.research-gallery img:hover {
+    transform: scale(1.05);
 }
 
 /* D3 Charts - FULLY RESPONSIVE */
@@ -277,7 +391,7 @@ nav ul {
     position: fixed;
     z-index: 9999;
     inset: 0;
-    background: rgba(0,0,0,0.94);
+    background: rgba(0, 0, 0, 0.94);
     justify-content: center;
     align-items: center;
     cursor: pointer;
@@ -287,7 +401,7 @@ nav ul {
     max-width: 70%;
     max-height: 85vh;
     border-radius: 16px;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.8);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
 }
 
 .drawing-close {
@@ -310,8 +424,13 @@ nav ul {
     transform: translateY(-50%);
 }
 
-#drawing-prev { left: 30px; }
-#drawing-next { right: 30px; }
+#drawing-prev {
+    left: 30px;
+}
+
+#drawing-next {
+    right: 30px;
+}
 
 /* Back to Top */
 #back-to-top {
@@ -326,7 +445,7 @@ nav ul {
     border-radius: 50%;
     font-size: 32px;
     cursor: pointer;
-    box-shadow: 0 10px 35px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5);
     opacity: 0;
     visibility: hidden;
     transition: all 0.4s ease;
@@ -369,8 +488,17 @@ nav ul {
     margin-bottom: 40px;
 }
 
-@keyframes spin { to { transform: rotate(360deg); } }
-.loaded #loader { opacity: 0; visibility: hidden; pointer-events: none; }
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.loaded #loader {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
 
 /* Add this to your style.css if not already present */
 .process-gallery {
@@ -382,8 +510,9 @@ nav ul {
 }
 
 /* Update this block in your <style> tag */
-.process-gallery img, 
-.process-gallery video {  /* <-- Add this line! */
+.process-gallery img,
+.process-gallery video {
+    /* <-- Add this line! */
     width: 200px;
     height: 140px;
     object-fit: cover;
@@ -391,11 +520,13 @@ nav ul {
     border-radius: 15px;
     cursor: pointer;
     transition: transform 0.3s;
-    background: #000; /* Adds a nice black background before the video loads */
+    background: #000;
+    /* Adds a nice black background before the video loads */
 }
 
 .process-gallery img:hover,
-.process-gallery video:hover { /* <-- Add this line too! */
+.process-gallery video:hover {
+    /* <-- Add this line too! */
     transform: scale(1.05);
 }
 
@@ -409,13 +540,16 @@ nav ul {
     position: sticky;
     top: 0;
     background: rgba(92, 165, 165, 0.95);
-    padding: 15px 40px; /* Increased side padding for label safety */
+    padding: 15px 40px;
+    /* Increased side padding for label safety */
     margin: 20px auto;
-    max-width: 90%; /* Changed from 1000px to percentage for responsiveness */
+    max-width: 90%;
+    /* Changed from 1000px to percentage for responsiveness */
     z-index: 100;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
-    box-sizing: border-box; /* Ensures padding doesn't add to width */
+    box-sizing: border-box;
+    /* Ensures padding doesn't add to width */
 }
 
 .timeline {
@@ -423,7 +557,8 @@ nav ul {
     height: 22px;
     background: antiquewhite;
     border-radius: 11px;
-    margin-bottom: 30px; /* Space for labels */
+    margin-bottom: 30px;
+    /* Space for labels */
     width: 100%;
 }
 
@@ -432,7 +567,8 @@ nav ul {
     top: 28px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 0.75rem; /* Slightly smaller to fit more on mobile */
+    font-size: 0.75rem;
+    /* Slightly smaller to fit more on mobile */
     color: antiquewhite;
     white-space: nowrap;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
@@ -441,11 +577,11 @@ nav ul {
 
 .collapsible-wrapper {
     /* This is the 'ceiling' - any content taller than this will be hidden */
-    max-height: 200px !important; 
-    
+    max-height: 200px !important;
+
     /* This is the 'cloak' - it MUST be hidden to chop off the text */
-    overflow: hidden !important; 
-    
+    overflow: hidden !important;
+
     position: relative;
     transition: max-height 0.5s ease-in-out;
 }
@@ -458,13 +594,15 @@ nav ul {
     left: 0;
     width: 100%;
     height: 80px;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.9)); /* Adjust color to your bg */
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+    /* Adjust color to your bg */
     pointer-events: none;
 }
 
 /* When the 'expanded' class is added via JS, the ceiling disappears */
 .collapsible-wrapper.expanded {
-    max-height: 5000px !important; /* A giant number so all text fits */
+    max-height: 5000px !important;
+    /* A giant number so all text fits */
 }
 
 /* Hide the fade effect when expanded */
